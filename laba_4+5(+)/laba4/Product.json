@@ -1,0 +1,98 @@
+[
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 0
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "hello",
+    "Price": 9999,
+    "Description": "Hi",
+    "AllDescription": "Hello or Hi",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\hello.png",
+    "Name": "nekola",
+    "Price": 2,
+    "Description": "test",
+    "AllDescription": "this is a simple test",
+    "Quantity": 12
+  }
+]
