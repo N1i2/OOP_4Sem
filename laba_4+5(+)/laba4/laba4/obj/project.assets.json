@@ -105,11 +105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\univer\\OOP\\laba_4+5(-)\\laba4\\laba4\\laba4.csproj",
+      "projectUniqueName": "D:\\univer\\OOP\\laba_4+5(+)\\laba4\\laba4\\laba4.csproj",
       "projectName": "laba4",
-      "projectPath": "D:\\univer\\OOP\\laba_4+5(-)\\laba4\\laba4\\laba4.csproj",
+      "projectPath": "D:\\univer\\OOP\\laba_4+5(+)\\laba4\\laba4\\laba4.csproj",
       "packagesPath": "C:\\Users\\nikko\\.nuget\\packages\\",
-      "outputPath": "D:\\univer\\OOP\\laba_4+5(-)\\laba4\\laba4\\obj\\",
+      "outputPath": "D:\\univer\\OOP\\laba_4+5(+)\\laba4\\laba4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -47,7 +47,7 @@
             Style="{DynamicResource SaveProd}"
             Foreground="Black"
             FontSize="20"
-            Background="green"
+            Background="LightGreen"
             Click="saveButton_Click"/>
         <Button 
             x:Name="backButton"
@@ -55,7 +55,7 @@
             Margin="496,484,102,74" 
             Style="{DynamicResource BackProd}"
             Foreground="Black"
-            Background="Red"
+            Background="#AA3C2C"
             Click="Button_Click"/>
         <TextBlock x:Name="productName" Style="{DynamicResource ProdName}" Margin="50,100,365,413" />
         <TextBox x:Name="nameBox" Margin="286,96,48,452"/>
