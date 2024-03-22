@@ -1,0 +1,47 @@
+[
+  {
+    "Name": "cuvcfc",
+    "Year": 3,
+    "Semester": 1,
+    "Specialies": "POIBMS",
+    "Control": 2,
+    "Lectures": 50,
+    "Laboratory": 10,
+    "Lector": {
+      "Name": "vscefv fdsv fvevs",
+      "Deportament": "KISiT",
+      "ClassRoom": 45,
+      "PhoneNumber": "(676) 767-6767"
+    },
+    "Books": []
+  },
+  {
+    "Name": "cttct",
+    "Year": 4,
+    "Semester": 3,
+    "Specialies": "DEVI",
+    "Control": 2,
+    "Lectures": 50,
+    "Laboratory": 10,
+    "Lector": {
+      "Name": "tych htrhrt htj",
+      "Deportament": "KPI",
+      "ClassRoom": 45,
+      "PhoneNumber": "(564) 546-5656"
+    },
+    "Books": [
+      {
+        "Name": "greghbtfxbf",
+        "Autor": "bfgcbfg",
+        "Date": "16 \u0444\u0435\u0432\u0440\u0430\u043B\u044F 2024 \u0433.",
+        "Pages": 45
+      },
+      {
+        "Name": "nindf",
+        "Autor": "vfndhj",
+        "Date": "16 \u0444\u0435\u0432\u0440\u0430\u043B\u044F 2024 \u0433.",
+        "Pages": 10000
+      }
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "Name": "hello1",
+    "Year": 3,
+    "Semester": 1,
+    "Specialies": "DEVI",
+    "Control": 2,
+    "Lectures": 40,
+    "Laboratory": 10,
+    "Lector": {
+      "Name": "resg gtrsg rtg",
+      "Deportament": "KIiVD",
+      "ClassRoom": 123,
+      "PhoneNumber": "(000) 000-0000"
+    },
+    "Books": []
+  },
+  {
+    "Name": "hello2",
+    "Year": 3,
+    "Semester": 1,
+    "Specialies": "DEVI",
+    "Control": 1,
+    "Lectures": 40,
+    "Laboratory": 10,
+    "Lector": {
+      "Name": "resg gtrsg rtg",
+      "Deportament": "KIiVD",
+      "ClassRoom": 123,
+      "PhoneNumber": "(000) 000-0000"
+    },
+    "Books": []
+  },
+  {
+    "Name": "hello3",
+    "Year": 3,
+    "Semester": 1,
+    "Specialies": "DEVI",
+    "Control": 1,
+    "Lectures": 32,
+    "Laboratory": 10,
+    "Lector": {
+      "Name": "resg gtrsg rtg",
+      "Deportament": "KIiVD",
+      "ClassRoom": 123,
+      "PhoneNumber": "(000) 000-0000"
+    },
+    "Books": []
+  },
+  {
+    "Name": "hello5",
+    "Year": 3,
+    "Semester": 1,
+    "Specialies": "DEVI",
+    "Control": 1,
+    "Lectures": 10,
+    "Laboratory": 10,
+    "Lector": {
+      "Name": "resg gtrsg rtg",
+      "Deportament": "KIiVD",
+      "ClassRoom": 123,
+      "PhoneNumber": "(000) 000-0000"
+    },
+    "Books": []
+  }
+]

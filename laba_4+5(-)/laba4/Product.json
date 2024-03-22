@@ -1,0 +1,122 @@
+[
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440x",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 0
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 99999999
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 99999994
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 99999999
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 99999999
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 4
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 99999999
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 99999999
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 99999999
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 5
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "\u041C\u0435\u0440\u0447",
+    "Price": 999999,
+    "Description": "\u0421\u0438\u043B\u0430",
+    "AllDescription": "\u0421\u0430\u043C\u043E\u0435 \u0441\u0438\u043B\u044C\u043D\u043E\u0435 \u0447\u0442\u043E \u0435\u0441\u0442\u044C \u0432\u043E \u0432\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439",
+    "Quantity": 99999999
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\laba4\\Image\\list.png",
+    "Name": "jj",
+    "Price": 123,
+    "Description": "qwerty",
+    "AllDescription": "qazsxdcfvwert",
+    "Quantity": 867
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "Car",
+    "Price": 2000,
+    "Description": "This is car",
+    "AllDescription": "This a very good and fast car",
+    "Quantity": 2
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\car.png",
+    "Name": "fteyv",
+    "Price": 2415,
+    "Description": "njrekbh",
+    "AllDescription": "vgrebhjbvh",
+    "Quantity": 123
+  },
+  {
+    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5(-)\\laba4\\image\\hello.png",
+    "Name": "nechto",
+    "Price": 334,
+    "Description": "hile",
+    "AllDescription": "hello how are you",
+    "Quantity": 55
+  }
+]
