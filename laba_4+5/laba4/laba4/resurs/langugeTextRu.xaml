@@ -1,0 +1,98 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Shop -->
+    <Style x:Key="welcomBuyer" TargetType="TextBlock">
+        <Setter Property="Text" Value="Здравствуйте Покупатель"/>
+    </Style>
+    <Style x:Key="welcomAdmin" TargetType="TextBlock">
+        <Setter Property="Text" Value="Здравствуй Админ"/>
+    </Style>
+    <Style x:Key="AreAvailable" TargetType="TextBlock">
+        <Setter Property="Text" Value="В Наличии"/>
+    </Style>
+    <Style x:Key="NotAvailable" TargetType="TextBlock">
+        <Setter Property="Text" Value="Нет в Наличии"/>
+    </Style>
+    <Style x:Key="Filter" TargetType="TextBlock">
+        <Setter Property="Text" Value="Фильтр"/>
+    </Style>
+    <Style x:Key="Search" TargetType="TextBlock">
+        <Setter Property="Text" Value="Поиск"/>
+    </Style>
+    <Style x:Key="FilterByName" TargetType="ComboBoxItem">
+        <Setter Property="Content" Value="По Имени"/>
+    </Style>
+    <Style x:Key="FilterByPrice" TargetType="ComboBoxItem">
+        <Setter Property="Content" Value="По Цене"/>
+    </Style>
+
+    <!-- AddNewProduct -->
+    <Style x:Key="ProdAdd" TargetType="TextBlock">
+        <Setter Property="Text" Value="Добавить продукт"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style x:Key="ProdName" TargetType="TextBlock">
+        <Setter Property="Text" Value="Имя Продукта"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style x:Key="ProdPrice" TargetType="TextBlock">
+        <Setter Property="Text" Value="Цена Продукта"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style x:Key="ProdImage" TargetType="TextBlock">
+        <Setter Property="Text" Value="Изображение"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style x:Key="ProdDiscription" TargetType="TextBlock">
+        <Setter Property="Text" Value="Описание"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style x:Key="ProdFullDiscription" TargetType="TextBlock">
+        <Setter Property="Text" Value="Полное Описание"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style x:Key="ProdQuantity" TargetType="TextBlock">
+        <Setter Property="Text" Value="Количество"/>
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    <Style x:Key="SaveProd" TargetType="Button">
+        <Setter Property="Content" Value="Сохранить"/>
+    </Style>
+    <Style x:Key="BackProd" TargetType="Button">
+        <Setter Property="Content" Value="Назад"/>
+    </Style>
+    
+    <!-- FullProduct -->
+    <Style x:Key="ShowName" TargetType="TextBlock">
+        <Setter Property="Text" Value="Имя"/>
+        <Setter Property="FontSize" Value="15"/>
+    </Style>
+    <Style x:Key="ShowPrice" TargetType="TextBlock">
+        <Setter Property="Text" Value="Цена"/>
+        <Setter Property="FontSize" Value="15"/>
+    </Style>
+    <Style x:Key="ShowQuantity" TargetType="TextBlock">
+        <Setter Property="Text" Value="Количество"/>
+        <Setter Property="FontSize" Value="15"/>
+    </Style>
+    <Style x:Key="ShowDiscription" TargetType="TextBlock">
+        <Setter Property="Text" Value="Описание"/>
+        <Setter Property="FontSize" Value="15"/>
+    </Style>
+    <Style x:Key="Order" TargetType="Button">
+        <Setter Property="Content" Value="Заказать"/>
+    </Style>
+    <Style x:Key="ShowBack" TargetType="Button">
+        <Setter Property="Content" Value="Назад"/>
+    </Style>
+    <Style x:Key="ShowChange" TargetType="Button">
+        <Setter Property="Content" Value="Изменить"/>
+    </Style>
+    <Style x:Key="ShowSaveChange" TargetType="Button">
+        <Setter Property="Content" Value="Сохранить"/>
+    </Style>
+    <Style x:Key="Delete" TargetType="Button">
+        <Setter Property="Content" Value="Удалить"/>
+    </Style>
+</ResourceDictionary>

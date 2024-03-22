@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="admin\AddNewProduct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="user\fullProduct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="user\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="user\Shop.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="admin\AddNewProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="user\fullProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="resurs\langugeTextEng.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="resurs\langugeTextRu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="user\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="user\Shop.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
