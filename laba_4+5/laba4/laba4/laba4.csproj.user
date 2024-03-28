@@ -24,6 +24,12 @@
     <Page Update="admin\AddNewProduct.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="resurs\BlackFone.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="resurs\WhiteFone.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="user\fullProduct.xaml">
       <SubType>Designer</SubType>
     </Page>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cjon/N/Mw/TwUQ/9WNVqaQzE5cgu4Vc65pKkCGdqhcqDUfnwcq7wGgHrQTwmFWVaaSu1BcqaQaqis0xfpMI9Hw==",
+  "dgSpecHash": "RPJg4U62r6zQ6Lug0wot8ct/tI9dYwfSo06M2zZKshVq30Hog6HOsiSPD6cOI2+ydZdK/J/78k/mD1CKpMBuAA==",
   "success": true,
-  "projectFilePath": "D:\\univer\\OOP\\laba_4+5(+)\\laba4\\laba4\\laba4.csproj",
+  "projectFilePath": "D:\\univer\\OOP\\laba_4+5\\laba4\\laba4\\laba4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nikko\\.nuget\\packages\\materialdesigncolors\\2.0.3\\materialdesigncolors.2.0.3.nupkg.sha512",
     "C:\\Users\\nikko\\.nuget\\packages\\materialdesignthemes\\4.2.1\\materialdesignthemes.4.2.1.nupkg.sha512"

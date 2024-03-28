@@ -9,7 +9,7 @@
         MaxHeight="590"
         MaxWidth="710"
         HorizontalAlignment="Stretch"
-        Title="My Shop" Height="590" Width="710" Icon="Image/Group 1.png" >
+        Title="My Shop" Height="590" Width="710" Icon="Image/iconcaBlack.png">
     <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
 
 </Window>

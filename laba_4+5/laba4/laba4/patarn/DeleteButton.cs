@@ -18,7 +18,7 @@ namespace laba4
 
             FileWork.Serialize(f.products);
 
-            f.NavigationService.Navigate(new Shop(true, true));
+            f.NavigationService.Navigate(new Shop(true, true, Shop.GetFone()));
         }
     }
 }

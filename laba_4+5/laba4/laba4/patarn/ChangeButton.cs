@@ -40,7 +40,7 @@ namespace laba4
                 f.quantityB.Text = f.quantity.Text;
                 f.discriptionB.Text = f.discription.Text;
 
-                f.change.SetResourceReference(Control.StyleProperty, "ShowSaveChange");
+                f.change.Content = (string)Application.Current.Resources["ShowSaveChange"]; 
             }
             else
             {
@@ -81,16 +81,27 @@ namespace laba4
                 f.quantity.Text = f.quantityB.Text;
                 f.discription.Text = f.discriptionB.Text;
 
-                f.change.SetResourceReference(Control.StyleProperty, "ShowChange");
-
                 if (f.quantity.Text == "0")
                 {
                     f.order.Background = Brushes.Gray;
                 }
                 else
                 {
-                    f.order.Background = new SolidColorBrush(System.Windows.Media.Color.FromRgb(30, 66, 64));
+                    Brush orderFont;
+
+                    if (Shop.GetFone() == Fone.white)
+                    {
+                        orderFont = new SolidColorBrush(System.Windows.Media.Color.FromRgb(127, 147, 145));
+                    }
+                    else
+                    {
+                        orderFont = new SolidColorBrush(System.Windows.Media.Color.FromRgb(47, 67, 65));
+                    }
+
+                    f.order.Background = orderFont;
                 }
+
+                f.change.Content = Application.Current.Resources["ShowChange"];
             }
         }
     }

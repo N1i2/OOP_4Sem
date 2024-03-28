@@ -131,7 +131,7 @@ namespace laba4
 
                 Product prod = new Product(pathImageBox.Text, nameBox.Text, doubleValue, discriptionBox.Text, fullDiscriptionBox.Text, intValue);
 
-                NavigationService.Navigate(new Shop(prod));
+                NavigationService.Navigate(new Shop(prod, Shop.GetFone()));
             }
             catch (Exception er)
             {

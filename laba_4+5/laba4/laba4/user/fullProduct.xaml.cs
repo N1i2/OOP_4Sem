@@ -42,7 +42,18 @@ namespace laba4
             change.Visibility = (admin) ? Visibility.Visible : Visibility.Hidden;
             delete.Visibility = (admin) ? Visibility.Visible : Visibility.Hidden;
 
-            order.Background = (quan == 0) ? Brushes.Gray : new SolidColorBrush(System.Windows.Media.Color.FromRgb(30, 66, 64));
+            Brush orderFont;
+
+            if(Shop.GetFone() == Fone.white)
+            {
+                orderFont = new SolidColorBrush(System.Windows.Media.Color.FromRgb(127, 147, 145));
+            }
+            else
+            {
+                orderFont = new SolidColorBrush(System.Windows.Media.Color.FromRgb(47, 67, 65));
+            }
+
+            order.Background = (quan == 0) ? Brushes.Gray : orderFont;
             imageBord.BorderBrush = (quan == 0) ? Brushes.Red : Brushes.Green;
 
             image.Source = new BitmapImage(new Uri(prod[index].PicturePath ?? "hello.png", UriKind.RelativeOrAbsolute));
@@ -65,7 +76,7 @@ namespace laba4
             if (needChange)
             {
                 FileWork.Serialize(products);
-                NavigationService.Navigate(new Shop((delete.Visibility == Visibility.Visible), true));
+                NavigationService.Navigate(new Shop((delete.Visibility == Visibility.Visible), true, Shop.GetFone()));
                 return;
             }
             NavigationService.GoBack();

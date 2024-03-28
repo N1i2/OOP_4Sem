@@ -14,46 +14,48 @@
         </Style>
     </Page.Resources>
 
-    <Grid Height="590" Width="710" Background="White">
+    <Grid Height="590" Width="710" Style="{DynamicResource MainFone}">
         <Border x:Name="imageBord" BorderThickness="0" BorderBrush="Red" Margin="30,30,453,326" >
-            <Image x:Name="image" Stretch="fill" Source="hello.png"/>
+            <Image Source="../Image/hello.png" x:Name="image" Stretch="fill"/>
         </Border>
-        <TextBlock x:Name="nameBlock" Style="{DynamicResource ShowName}" Margin="278,65,290,491"/>
-        <TextBlock x:Name="name" Margin="472,62,0,494"/>
-        <TextBox Name="nameB" Margin="472,62,0,494" Visibility="Hidden"/>
-        <TextBlock x:Name="priceBlock" Style="{DynamicResource ShowPrice}" Margin="278,99,249,457"/>
-        <TextBlock x:Name="price" Margin="472,96,19,460"/>
-        <TextBox x:Name="priceB" Margin="472,96,19,460" Visibility="Hidden"/>
-        <TextBlock x:Name="quantityBlock" Style="{DynamicResource ShowQuantity}" Margin="278,133,244,423"/>
-        <TextBlock x:Name="quantity" Margin="472,130,25,426"/>
-        <TextBox x:Name="quantityB" Margin="472,130,25,426" Visibility="Hidden"/>
-        <TextBlock x:Name="discriptionBlock" Style="{DynamicResource ShowDiscription}" Margin="284,352,296,204"/>
-        <TextBlock x:Name="discription" Text="   " Margin="30,386,25,105" TextWrapping="Wrap"/>
+        <TextBlock Style="{DynamicResource textBodyColor}" x:Name="nameBlock" Text="{DynamicResource ShowName}" Margin="278,65,290,491"/>
+        <TextBlock Style="{DynamicResource textBodyColor}" x:Name="name" Margin="472,62,0,494"/>
+        <TextBox Style="{DynamicResource searchColor}" Name="nameB" Margin="472,62,25,508" Visibility="Hidden"/>
+        <TextBlock Style="{DynamicResource textBodyColor}" x:Name="priceBlock" Text="{DynamicResource ShowPrice}" Margin="278,99,249,457"/>
+        <TextBlock Style="{DynamicResource textBodyColor}" x:Name="price" Margin="472,96,19,460"/>
+        <TextBox Style="{DynamicResource searchColor}" x:Name="priceB" Margin="472,96,25,474" Visibility="Hidden"/>
+        <TextBlock Style="{DynamicResource textBodyColor}" x:Name="quantityBlock" Text="{DynamicResource ShowQuantity}" Margin="278,133,244,423"/>
+        <TextBlock Style="{DynamicResource textBodyColor}" x:Name="quantity" Margin="472,130,25,426"/>
+        <TextBox Style="{DynamicResource searchColor}" x:Name="quantityB" Margin="472,130,25,440" Visibility="Hidden"/>
+        <TextBlock Style="{DynamicResource textBodyColor}" x:Name="discriptionBlock" Text="{DynamicResource ShowDiscription}" Margin="284,352,296,204"/>
+        <TextBlock Style="{DynamicResource textBodyColor}" x:Name="discription" Text="   " Margin="30,386,25,105" TextWrapping="Wrap"/>
         <TextBox
+            Style="{DynamicResource searchColor}"
             x:Name="discriptionB"
             Text="   "
             Margin="30,386,25,105"
             TextWrapping="Wrap"
             Visibility="Hidden"/>
         <Button
+            Style="{DynamicResource buttonFullProgColor}"
             x:Name ="back"
-            Style="{DynamicResource ShowBack}"
+            Content="{DynamicResource ShowBack}"
             Margin="290,498,290,55"
-            Background="#1E4240"
-            Foreground="White"
             FontSize="20"
             Click="Button_Click"/>
-        <Border Margin="30,285,450,267" BorderBrush="Black" BorderThickness="3">
+
+        <Border Margin="30,285,450,267" BorderBrush="Black" BorderThickness="2">
             <Button
+                Style="{DynamicResource buttonFullProgColor}"
                 x:Name="order"
-            Background="#1E4240" 
-            FontSize="16"
-                Foreground="white"
-            Style="{DynamicResource Order}"
-                Click="Button_Click_1"/>
+                FontSize="16"
+                Content="{DynamicResource Order}"
+                Click="Button_Click_1">
+            </Button>
         </Border>
         <ComboBox
-                x:Name="languge"    
+            Style="{DynamicResource textComboBoxColor}"
+            x:Name="languge"    
             Margin="30,498,620,67"
             FontSize="10"
             SelectionChanged="languge_SelectionChanged">
@@ -61,20 +63,20 @@
             <ComboBoxItem Content="Рус"/>
         </ComboBox>
         <Button 
+            Style="{DynamicResource buttonFullProgColor}"
             x:Name="change" 
             Margin="452,498,128,55"
-            Background="#1E4240" 
             FontSize="20"
             Foreground="#A4B23D"
-            Style="{DynamicResource ShowChange}"
+            Content="{DynamicResource ShowChange}"
             Click="change_Click"/>
         <Button 
+            Style="{DynamicResource buttonFullProgColor}"
             x:Name="delete" 
-            Margin="127,498,453,55"
-            Background="#1E4240" 
+            Margin="127,498,453,55" 
             FontSize="20"
             Foreground="#AA3C2C"
-            Style="{DynamicResource Delete}"
+            Content="{DynamicResource Delete}"
             Click="delete_Click"/>
     </Grid>
 </Page>

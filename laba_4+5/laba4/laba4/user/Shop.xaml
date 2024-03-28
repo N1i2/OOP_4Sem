@@ -8,7 +8,7 @@
       d:Height="590" d:Width="710"
       Title="Shop">
 
-    <Grid Background="White">
+    <Grid Style="{DynamicResource MainFone}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.25*"/>
             <RowDefinition Height="0.2*"/>
@@ -26,40 +26,59 @@
                 Panel.ZIndex="2"
                 Stretch="Fill"
                 Height="50"
-                Source="../Image/Group 1.png"
+                Style="{DynamicResource welcomIcon}"
                 RenderTransformOrigin="0.5,0.5" Canvas.Left="34" Canvas.Top="20" HorizontalAlignment="Center" VerticalAlignment="Top" />
             <ComboBox
+                Style="{DynamicResource textComboBoxColor}"
                 Panel.ZIndex="2"
                 Canvas.Left="586"
-                Canvas.Top="44"
+                Canvas.Top="48"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Width="79" 
                 x:Name="languge"
-                Foreground="White"
                 SelectionChanged="ComboBox_SelectionChanged">
                 <ComboBoxItem Foreground="Black" Content="Eng" IsSelected="True"/>
                 <ComboBoxItem Foreground="Black" Content="Рус"/>
             </ComboBox>
             <TextBlock
+                Text="{DynamicResource welcomBuyer}"
+                Style="{DynamicResource textBodyColor}"
                 x:Name="welcome"
-                Style="{DynamicResource welcomBuyer}"
                 FontSize="30"
-                Foreground="Black"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 FontFamily="Century Gothic" Canvas.Left="34" Canvas.Top="107"/>
+            <TextBlock
+                Text="{DynamicResource welcomAdmin}"
+                Style="{DynamicResource textBodyColor}"
+                Visibility="Hidden"
+                x:Name="welcomeA"
+                FontSize="30"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontFamily="Century Gothic" Canvas.Left="34" Canvas.Top="107"/>
+
             <Button
                 Panel.ZIndex="2"
+                Style="{StaticResource addButonColor}"
+                Content="{DynamicResource add}"
                 x:Name="ButtonAdd"
-                Content="Add"
                 Height="24"
                 Width="79"
-                Canvas.Left="586"
-                Canvas.Top="15"
-                Background="#339994"
-                Cursor="Hand" Click="ButtonAdd_Click" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Border BorderBrush="Black" Background="#1E4240" BorderThickness="1" Height="89" Width="710"/>
+                Canvas.Left="492"
+                Canvas.Top="10"
+                Cursor="Hand" 
+                Click="ButtonAdd_Click" 
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"/>
+
+            <Border 
+                Style="{DynamicResource headerShop}"
+                BorderBrush="Black" 
+                BorderThickness="1" 
+                Height="89" 
+                Width="710"/>
         </Canvas>
         <ListBox 
             ScrollViewer.VerticalScrollBarVisibility="Visible" 
@@ -75,25 +94,30 @@
 
             </WrapPanel>
         </ListBox>
-        <Border BorderBrush="White" BorderThickness="2" Grid.Column="1" Grid.Row="1" Margin="456,10,121,10">
-            <TextBlock x:Name="available" Style="{DynamicResource AreAvailable}" Margin="3,14,0,0" Foreground="Black"/>
+        <Border Grid.Column="1" Grid.Row="1" Margin="458,13,121,10">
+            <TextBlock Style="{DynamicResource textBodyColor}" x:Name="available" Text="{DynamicResource AreAvailable}" Margin="3,14,0,0"/>
         </Border>
         <Border BorderBrush="#AA3C2C" BorderThickness="2" Grid.Column="1" Grid.Row="1" Margin="550,10,19,10">
-            <TextBlock x:Name="notAvailable" Style="{DynamicResource NotAvailable}" Margin="3,14,0,0" Foreground="Black"/>
+            <TextBlock Style="{DynamicResource textBodyColor}" x:Name="notAvailable" Text="{DynamicResource NotAvailable}" Margin="3,14,0,0"/>
         </Border>
 
-        <TextBlock Style="{DynamicResource Filter}" Foreground="white" FontSize="20" Grid.Column="1" Margin="81,14,498,39"/>
-        <ComboBox Grid.Column="1" Margin="81,50,498,14" Foreground="White" x:Name="filterBox">
-            <ComboBoxItem Foreground="black" Style="{DynamicResource FilterByName}" IsSelected="True"/>
-            <ComboBoxItem Foreground="black" Style="{DynamicResource FilterByPrice}"/>
+        <TextBlock Style="{DynamicResource textHeaderColor}" Text="{DynamicResource Filter}" FontSize="20" Grid.Column="1" Margin="81,14,498,39"/>
+        <ComboBox Style="{DynamicResource textComboBoxColor}" Grid.Column="1" Margin="81,50,498,14" x:Name="filterBox" Background="Black">
+            <ComboBoxItem Foreground="black" Content="{DynamicResource FilterByName}" IsSelected="True"/>
+            <ComboBoxItem Foreground="black" Content="{DynamicResource FilterByPrice}"/>
         </ComboBox>
 
-        <TextBlock FontSize="20" Foreground="white" Style="{DynamicResource Search}" Grid.Column="1" Margin="335,14,185,39"/>
-        <Border Background="White" CornerRadius="15" Grid.Column="1" Margin="190,45,121,14">
+        <TextBlock Style="{DynamicResource textHeaderColor}" FontSize="20" Text="{DynamicResource Search}" Grid.Column="1" Margin="335,14,185,39"/>
+        <Border Style="{DynamicResource SearchBackColor}" Cursor="Hand" CornerRadius="15" Grid.Column="1" Margin="190,45,121,14">
             <Grid>
                 <Image Source="../Image/search.png" Panel.ZIndex="2" Margin="7, 5, 330, 5" />
-                <TextBox Margin="30, 3, 15, 3" KeyUp="TextBox_KeyUp" x:Name="searchBox"/>
+                <TextBox Style="{DynamicResource searchColor}" FontSize="18" BorderThickness="0" Margin="30, 3, 15, 3" KeyUp="TextBox_KeyUp" x:Name="searchBox"/>
             </Grid>
         </Border>
+
+        <ComboBox Style="{DynamicResource textComboBoxColor}" x:Name="fone" Grid.Column="1" Margin="564,12,22.625,55.4" SelectionChanged="ComboBox_SelectionChanged_1">
+            <ComboBoxItem Content="{DynamicResource whiteF}" x:Name="whiteItem" IsSelected="True" Foreground="Black"/>
+            <ComboBoxItem Content="{DynamicResource blackF}" x:Name="blackItem" Foreground="Black"/>
+        </ComboBox>
     </Grid>
 </Page>

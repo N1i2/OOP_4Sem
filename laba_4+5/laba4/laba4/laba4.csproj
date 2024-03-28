@@ -11,6 +11,8 @@
   <ItemGroup>
     <None Remove="Image\Group 1.png" />
     <None Remove="Image\hello.png" />
+    <None Remove="Image\iconcaBlack.png" />
+    <None Remove="Image\iconcaWhite.png" />
     <None Remove="Image\inyan.png" />
     <None Remove="Image\list.png" />
     <None Remove="Image\search.png" />
@@ -23,6 +25,10 @@
   <ItemGroup>
     <Resource Include="Image\Group 1.png" />
     <Resource Include="Image\hello.png" />
+    <Resource Include="Image\iconcaBlack.png" />
+    <Resource Include="Image\iconcaWhite.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Image\inyan.png" />
     <Resource Include="Image\list.png" />
     <Resource Include="Image\search.png" />
