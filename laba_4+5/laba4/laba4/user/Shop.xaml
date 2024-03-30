@@ -8,6 +8,22 @@
       d:Height="590" d:Width="710"
       Title="Shop">
 
+    <Page.Resources>
+        <ControlTemplate TargetType="Button" x:Key="addButon">
+            <Border
+                BorderThickness="0, 4, 0, 4"
+                BorderBrush="Black"
+                Width="70"
+                Style="{StaticResource addButonColor}" RenderTransformOrigin="0.519,0.533">
+                <ContentControl
+                    Foreground="White"
+                    Cursor="Hand"
+                    Margin="18, 1"
+                    Content="{DynamicResource add}" RenderTransformOrigin="1.436,0.917"/>
+            </Border>
+        </ControlTemplate>
+    </Page.Resources>
+
     <Grid Style="{DynamicResource MainFone}">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.25*"/>
@@ -28,19 +44,21 @@
                 Height="50"
                 Style="{DynamicResource welcomIcon}"
                 RenderTransformOrigin="0.5,0.5" Canvas.Left="34" Canvas.Top="20" HorizontalAlignment="Center" VerticalAlignment="Top" />
-            <ComboBox
+
+            <local:FoneEU
                 Style="{DynamicResource textComboBoxColor}"
                 Panel.ZIndex="2"
                 Canvas.Left="586"
+                x:Name="languge"
                 Canvas.Top="48"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Width="79" 
-                x:Name="languge"
                 SelectionChanged="ComboBox_SelectionChanged">
                 <ComboBoxItem Foreground="Black" Content="Eng" IsSelected="True"/>
                 <ComboBoxItem Foreground="Black" Content="Рус"/>
-            </ComboBox>
+            </local:FoneEU>
+
             <TextBlock
                 Text="{DynamicResource welcomBuyer}"
                 Style="{DynamicResource textBodyColor}"
@@ -61,17 +79,15 @@
 
             <Button
                 Panel.ZIndex="2"
-                Style="{StaticResource addButonColor}"
-                Content="{DynamicResource add}"
                 x:Name="ButtonAdd"
-                Height="24"
-                Width="79"
-                Canvas.Left="492"
+                Canvas.Left="500"
                 Canvas.Top="10"
-                Cursor="Hand" 
                 Click="ButtonAdd_Click" 
-                HorizontalAlignment="Left"
-                VerticalAlignment="Center"/>
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Width="61"
+                Height="30"
+                Template="{StaticResource addButon}" />
 
             <Border 
                 Style="{DynamicResource headerShop}"
@@ -111,7 +127,18 @@
         <Border Style="{DynamicResource SearchBackColor}" Cursor="Hand" CornerRadius="15" Grid.Column="1" Margin="190,45,121,14">
             <Grid>
                 <Image Source="../Image/search.png" Panel.ZIndex="2" Margin="7, 5, 330, 5" />
-                <TextBox Style="{DynamicResource searchColor}" FontSize="18" BorderThickness="0" Margin="30, 3, 15, 3" KeyUp="TextBox_KeyUp" x:Name="searchBox"/>
+                <TextBox FontSize="18" BorderThickness="0" Margin="30, 3, 15, 3" KeyUp="TextBox_KeyUp" x:Name="searchBox">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ElementName=searchBox, Path=Text.Length}" Value = "21">
+                                    <Setter Property="Foreground" Value="Red"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
             </Grid>
         </Border>
 

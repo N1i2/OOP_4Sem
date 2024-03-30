@@ -17,10 +17,10 @@
   },
   {
     "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5\\laba4\\image\\3_car.png",
-    "Name": "Future car",
-    "Price": 5959,
+    "Name": "Cool car",
+    "Price": 9000,
     "Description": "Very furure",
-    "AllDescription": "This car came to us from the future",
+    "AllDescription": "Cool car for cool men",
     "Quantity": 0
   },
   {

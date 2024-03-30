@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
-namespace laba4.worker
+namespace laba4
 {
-    class FoneEU: Control
+    public class FoneEU: ComboBox
     {
-
+        public FoneEU()
+        {
+            x: Name = "languge";
+        }
     }
 }

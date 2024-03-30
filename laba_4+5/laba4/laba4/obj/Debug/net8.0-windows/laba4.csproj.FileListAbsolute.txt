@@ -129,3 +129,4 @@ D:\univer\OOP\laba_4+5\laba4\laba4\obj\Debug\net8.0-windows\laba4.genruntimeconf
 D:\univer\OOP\laba_4+5\laba4\laba4\obj\Debug\net8.0-windows\ref\laba4.dll
 D:\univer\OOP\laba_4+5\laba4\laba4\obj\Debug\net8.0-windows\resurs\BlackFone.baml
 D:\univer\OOP\laba_4+5\laba4\laba4\obj\Debug\net8.0-windows\resurs\WhiteFone.baml
+D:\univer\OOP\laba_4+5\laba4\laba4\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

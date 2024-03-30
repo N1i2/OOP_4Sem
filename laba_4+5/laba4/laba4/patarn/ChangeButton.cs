@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows;
 using System.Windows.Navigation;
 using System.Xml.Linq;
+using laba4.UndoRedo;
 
 namespace laba4
 {
@@ -34,11 +35,6 @@ namespace laba4
                 f.priceB.Visibility = Visibility.Visible;
                 f.quantityB.Visibility = Visibility.Visible;
                 f.discriptionB.Visibility = Visibility.Visible;
-
-                f.nameB.Text = f.name.Text;
-                f.priceB.Text = f.price.Text;
-                f.quantityB.Text = f.quantity.Text;
-                f.discriptionB.Text = f.discription.Text;
 
                 f.change.Content = (string)Application.Current.Resources["ShowSaveChange"]; 
             }

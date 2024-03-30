@@ -16,17 +16,45 @@
 
     <Grid Height="590" Width="710" Style="{DynamicResource MainFone}">
         <Border x:Name="imageBord" BorderThickness="0" BorderBrush="Red" Margin="30,30,453,326" >
-            <Image Source="../Image/hello.png" x:Name="image" Stretch="fill"/>
+            <Image Source="../Image/hello.png" x:Name="image" Stretch="fill">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="RenderTransform">
+                            <Setter.Value>
+                                <ScaleTransform ScaleX="1" ScaleY="1"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1.05" Duration="0:0:0.4"/>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1.05" Duration="0:0:0.4"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleX" To="1" Duration="0:0:0.4"/>
+                                        <DoubleAnimation Storyboard.TargetProperty="RenderTransform.ScaleY" To="1" Duration="0:0:0.4"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
         </Border>
         <TextBlock Style="{DynamicResource textBodyColor}" x:Name="nameBlock" Text="{DynamicResource ShowName}" Margin="278,65,290,491"/>
         <TextBlock Style="{DynamicResource textBodyColor}" x:Name="name" Margin="472,62,0,494"/>
-        <TextBox Style="{DynamicResource searchColor}" Name="nameB" Margin="472,62,25,508" Visibility="Hidden"/>
+        <TextBox Style="{DynamicResource searchColor}" Name="nameB" Margin="472,62,25,508" Visibility="Hidden" SelectionChanged="nameB_SelectionChanged" />
         <TextBlock Style="{DynamicResource textBodyColor}" x:Name="priceBlock" Text="{DynamicResource ShowPrice}" Margin="278,99,249,457"/>
         <TextBlock Style="{DynamicResource textBodyColor}" x:Name="price" Margin="472,96,19,460"/>
-        <TextBox Style="{DynamicResource searchColor}" x:Name="priceB" Margin="472,96,25,474" Visibility="Hidden"/>
+        <TextBox Style="{DynamicResource searchColor}" x:Name="priceB" Margin="472,96,25,474" Visibility="Hidden" SelectionChanged="nameB_SelectionChanged" />
         <TextBlock Style="{DynamicResource textBodyColor}" x:Name="quantityBlock" Text="{DynamicResource ShowQuantity}" Margin="278,133,244,423"/>
         <TextBlock Style="{DynamicResource textBodyColor}" x:Name="quantity" Margin="472,130,25,426"/>
-        <TextBox Style="{DynamicResource searchColor}" x:Name="quantityB" Margin="472,130,25,440" Visibility="Hidden"/>
+        <TextBox Style="{DynamicResource searchColor}" x:Name="quantityB" Margin="472,130,25,440" Visibility="Hidden" SelectionChanged="nameB_SelectionChanged" />
         <TextBlock Style="{DynamicResource textBodyColor}" x:Name="discriptionBlock" Text="{DynamicResource ShowDiscription}" Margin="284,352,296,204"/>
         <TextBlock Style="{DynamicResource textBodyColor}" x:Name="discription" Text="   " Margin="30,386,25,105" TextWrapping="Wrap"/>
         <TextBox
@@ -35,7 +63,8 @@
             Text="   "
             Margin="30,386,25,105"
             TextWrapping="Wrap"
-            Visibility="Hidden"/>
+            Visibility="Hidden"
+            SelectionChanged="nameB_SelectionChanged" />
         <Button
             Style="{DynamicResource buttonFullProgColor}"
             x:Name ="back"
@@ -50,8 +79,7 @@
                 x:Name="order"
                 FontSize="16"
                 Content="{DynamicResource Order}"
-                Click="Button_Click_1">
-            </Button>
+                Click="Button_Click_1"/>
         </Border>
         <ComboBox
             Style="{DynamicResource textComboBoxColor}"
@@ -78,5 +106,12 @@
             Foreground="#AA3C2C"
             Content="{DynamicResource Delete}"
             Click="delete_Click"/>
+        <Ellipse Margin="30,270,45,310" StrokeThickness="3" Style="{DynamicResource line}"/>
+        <Button x:Name="Larr" Margin="30,340,650,230" Click="Button_Click_2" Visibility="Hidden">
+            <Image Stretch="Fill" Source="../Image/arrowL.png" x:Name="li"/>
+        </Button>
+        <Button x:Name="Rarr" Margin="70,340,610,230" Click="Button_Click_3" Visibility="Hidden">
+            <Image Stretch="Fill" Source="../Image/arrowR.png" x:Name="ri"/>
+        </Button>
     </Grid>
 </Page>

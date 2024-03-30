@@ -184,12 +184,21 @@ namespace laba4
 
         private void TextBox_KeyUp(object sender, KeyEventArgs e)
         {
+            if (searchBox.Text.Length >= 20)
+            {
+                string hi = new string(searchBox.Text.Take(20).ToArray());
+                searchBox.Text = hi;
+                searchBox.SelectionStart = 20;
+                return;
+            }
+
             if (e.Key != Key.Enter)
             {
                 return;
             }
 
             Keyboard.ClearFocus();
+
             ClearAllProduct();
             result = new List<Product>();
 
@@ -200,6 +209,7 @@ namespace laba4
                 find = false;
                 return;
             }
+
 
             if (filterBox.SelectedIndex == 0)
             {
@@ -286,10 +296,14 @@ namespace laba4
                 if (fone.SelectedIndex == 0)
                 {
                     uriF = new Uri(@"resurs/WhiteFone.xaml", UriKind.Relative);
+                    searchBox.Background = Brushes.White;
+                    searchBox.Foreground = Brushes.Black;
                 }
                 else
                 {
                     uriF = new Uri(@"resurs/BlackFone.xaml", UriKind.Relative);
+                    searchBox.Background = new SolidColorBrush(Color.FromRgb(153, 153, 153));
+                    searchBox.Foreground = Brushes.White;
                 }
 
 

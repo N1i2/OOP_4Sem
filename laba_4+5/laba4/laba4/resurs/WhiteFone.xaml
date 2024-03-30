@@ -25,10 +25,8 @@
     <Style x:Key="headerShop" TargetType="Border">
         <Setter Property="Background" Value="#7f9391"/>
     </Style>
-    <!-- Button -->
-    <Style x:Key="addButonColor" TargetType="Button">
+    <Style x:Key="addButonColor" TargetType="Border">
         <Setter Property="Background" Value="#339994"/>
-        <Setter Property="Foreground" Value="#333333"/>
     </Style>
     <!-- ComboBox -->
     <Style x:Key="textComboBoxColor" TargetType="ComboBox">
@@ -47,6 +45,11 @@
     <!-- Border -->
     <Style x:Key="buttonOrderColor" TargetType="Border">
         <Setter Property="Background" Value="#7f9391"/>
+    </Style>
+    <!-- Ellipse -->
+    <Style x:Key="line" TargetType="Ellipse">
+        <Setter Property="Fill" Value="#7f9391"/>
+        <Setter Property="Stroke" Value="#2f4341"/>
     </Style>
 
 </ResourceDictionary>
