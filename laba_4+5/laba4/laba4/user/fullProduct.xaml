@@ -107,11 +107,20 @@
             Content="{DynamicResource Delete}"
             Click="delete_Click"/>
         <Ellipse Margin="30,270,45,310" StrokeThickness="3" Style="{DynamicResource line}"/>
-        <Button x:Name="Larr" Margin="30,340,650,230" Click="Button_Click_2" Visibility="Hidden">
-            <Image Stretch="Fill" Source="../Image/arrowL.png" x:Name="li"/>
-        </Button>
-        <Button x:Name="Rarr" Margin="70,340,610,230" Click="Button_Click_3" Visibility="Hidden">
-            <Image Stretch="Fill" Source="../Image/arrowR.png" x:Name="ri"/>
-        </Button>
+
+        <Grid Margin="30,340,650,230" x:Name="Larr">
+            <Button Click="Button_Click_2">
+                <Button.Content>
+                    &lt;
+                </Button.Content>
+            </Button>
+        </Grid>
+        <Grid Margin="70,340,610,230" x:Name="Rarr">
+            <Button Click="Button_Click_3">
+                <Button.Content>
+                    &gt;
+                </Button.Content>
+            </Button>
+        </Grid>
     </Grid>
 </Page>

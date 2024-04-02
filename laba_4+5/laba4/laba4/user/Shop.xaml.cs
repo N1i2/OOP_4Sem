@@ -63,7 +63,7 @@ namespace laba4
 
             if (backFone == Fone.black)
             {
-                blackItem.IsSelected = true;
+                fone.focuseBlack();
                 ComboBox_SelectionChanged_1(0, null);
             }
 
@@ -278,10 +278,11 @@ namespace laba4
 
                 res = (System.Windows.Application.LoadComponent(uriL) as ResourceDictionary) ?? throw new Exception("Error with resource");
                 System.Windows.Application.Current.Resources.MergedDictionaries.Add(res);
+                fone.reversLang();
             }
             catch (Exception)
             {
-
+                fone.reversLang();
             }
         }
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
@@ -292,6 +293,7 @@ namespace laba4
                 ResourceDictionary res;
 
                 backFone = (Fone)fone.SelectedIndex;
+                fone.itemFocus(fone.SelectedIndex);
 
                 if (fone.SelectedIndex == 0)
                 {

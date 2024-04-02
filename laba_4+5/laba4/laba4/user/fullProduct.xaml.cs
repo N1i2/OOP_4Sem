@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +36,9 @@ namespace laba4
         public fullProduct(List<Product> prod, int index, bool admin)
         {
             InitializeComponent();
+
+            Larr.Visibility = Visibility.Hidden;
+            Rarr.Visibility = Visibility.Hidden;
 
             idx = index;
             products = prod;
@@ -158,8 +162,6 @@ namespace laba4
                 nameB_SelectionChanged(sender, e);
                 Larr.Visibility = Visibility.Visible;
                 Rarr.Visibility = Visibility.Visible;
-                li.Visibility = Visibility.Visible;
-                ri.Visibility = Visibility.Visible;
             }
             else
             {

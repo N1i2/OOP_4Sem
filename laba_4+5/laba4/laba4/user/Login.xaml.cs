@@ -21,6 +21,7 @@ namespace laba4
     /// </summary>
     public partial class Login : Page
     {
+        private Shop shop;
         private DispatcherTimer _timer;
         private bool _press = false;
         private bool tryAdmin = false;
@@ -35,11 +36,15 @@ namespace laba4
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (shop != null)
+                return;
+
             if(tryAdmin)
             {
                 if (passwordBox.Password == password)
                 {
-                    NavigationService.Navigate(new Shop(true, true));
+                    shop = new Shop(true, true);
+                    NavigationService.Navigate(shop);
                     return;
                 }
 /*                else
@@ -68,6 +73,15 @@ namespace laba4
                 ansverPassword.Visibility = Visibility;
                 passwordBox.Visibility = Visibility;
                 tryAdmin = true;
+            }
+        }
+
+        private void passwordBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter)
+            {
+                Button_Click(sender, e);
+                return;
             }
         }
     }

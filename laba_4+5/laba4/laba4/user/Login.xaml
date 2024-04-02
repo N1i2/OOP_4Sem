@@ -8,7 +8,7 @@
       d:Height="590" d:Width="710"
       Title="Login">
 
-    <Grid Background="White" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="590" Width="710">
+    <Grid Background="White" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="590" Width="710" KeyUp="passwordBox_KeyUp">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*"/>
             <RowDefinition Height="0.6*"/>
@@ -68,6 +68,8 @@
             x:Name="passwordBox"
             FontSize="18"
             VerticalAlignment="Top"
-            Margin="0,45,0,0"/>
+            Margin="0,45,0,0"
+            KeyUp = "passwordBox_KeyUp"/>
+
     </Grid>
 </Page>
