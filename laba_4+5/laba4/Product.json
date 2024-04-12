@@ -70,21 +70,5 @@
     "Description": "White Car",
     "AllDescription": "This car is White as show",
     "Quantity": 8
-  },
-  {
-    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5\\laba4\\image\\10_car.png",
-    "Name": "garaj",
-    "Price": 50000,
-    "Description": "gora",
-    "AllDescription": "garaj v gore",
-    "Quantity": 100
-  },
-  {
-    "PicturePath": "D:\\univer\\OOP\\laba_4\u002B5\\laba4\\image\\2_car.png",
-    "Name": "67",
-    "Price": 67,
-    "Description": "67",
-    "AllDescription": "67",
-    "Quantity": 67
   }
 ]

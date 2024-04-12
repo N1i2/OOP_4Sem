@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -33,8 +34,23 @@ namespace laba4
             _timer.Interval = TimeSpan.FromSeconds(3);
             _timer.Tick += Timer_Tick;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void ButtonUpFone(object sender, MouseButtonEventArgs e)
+        {
+            fon.Background = Brushes.White;
+        }
+        public void ButtonDownFone(object sender, MouseButtonEventArgs e)
+        {
+            fon.Background = Brushes.Gray;
+        }
+        public void ButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            but.Foreground = Brushes.Gray;
+        }
+        public void ButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            but.Foreground = Brushes.White;
+        }
+        public void ButtonClick(object sender, RoutedEventArgs e)
         {
             if (shop != null)
                 return;
@@ -80,7 +96,7 @@ namespace laba4
         {
             if(e.Key == Key.Enter)
             {
-                Button_Click(sender, e);
+                ButtonDown(sender, null);
                 return;
             }
         }

@@ -8,7 +8,7 @@
       d:Height="590" d:Width="710"
       Title="Login">
 
-    <Grid Background="White" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="590" Width="710" KeyUp="passwordBox_KeyUp">
+    <Grid x:Name="fon" Background="White" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="590" Width="710" MouseDown="ButtonDownFone" MouseUp="ButtonUpFone">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*"/>
             <RowDefinition Height="0.6*"/>
@@ -40,7 +40,11 @@
     FontSize="20"
     Cursor="Hand"
     Height="230"
-    Click="Button_Click" Margin="0,3,0,3">
+    MouseDown="ButtonDown"
+            MouseUp="ButtonUp"
+            Margin="0,3,0,3"
+            Click="ButtonClick"
+            x:Name="but">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="#1E4240" Offset="0.5"/>

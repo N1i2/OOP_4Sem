@@ -45,7 +45,7 @@ namespace laba4
             int quan = prod[index].Quantity;
 
             change.Visibility = (admin) ? Visibility.Visible : Visibility.Hidden;
-            delete.Visibility = (admin) ? Visibility.Visible : Visibility.Hidden;
+           // delete.Visibility = (admin) ? Visibility.Visible : Visibility.Hidden;
 
             Brush orderFont;
 
