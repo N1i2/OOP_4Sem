@@ -1,0 +1,7 @@
+[
+  "Data Source=NIKOLA;Initial Catalog=laba8_OOP;User Id=niko;Password=hello;",
+  "SELECT * FROM Class",
+  "INSERT INTO Class (id, name, semestr, years, count_of_labs, count_of_lects, control_type) VALUES (@Id, @Name, @Semestr, @Years, @CountOfLabs, @CountOfLects, @ControlType)",
+  "update Class set name = @Name, semestr = @Semestr, years = @Years, count_of_labs = @CountOfLabs, count_of_lects = @CountOfLects, control_type = @ControlType where id = @Id",
+  "DELETE FROM Class WHERE id = @Id"
+]

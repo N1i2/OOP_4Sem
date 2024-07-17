@@ -70,7 +70,7 @@ namespace laba_7 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/laba_7;V1.0.0.0;component/start/secondpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/laba_7;component/start/secondpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Start\SecondPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

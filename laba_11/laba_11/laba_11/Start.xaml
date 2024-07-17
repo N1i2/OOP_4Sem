@@ -1,0 +1,29 @@
+﻿<Page x:Class="laba_11.Start"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:laba_11"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1"
+      Background="White">
+
+    <Viewbox>
+        <Grid Height="450" Width="800">
+
+            <Label Content="Name" FontSize="20" Margin="119,120,608,282"/>
+            <TextBox x:Name="ProductName" ToolTip="Product Name" Margin="70,170,570,240" />
+            
+            <Label Content="Price" FontSize="20" Margin="369,124,358,278"/>
+            <TextBox x:Name="ProductPrice" ToolTip="Product Price" Margin="320,170,314,240" />
+            
+            <Label Content="Quantity" FontSize="20" Margin="611,117,98,285"/>
+            <TextBox x:Name="ProductQuantity" ToolTip="Product Quantity" Margin="570,170,70,240" />
+
+            <Button x:Name="AddButton" Content="Add Product" Click="AddButton_Click" Margin="60,300,554,85" />
+            <Button x:Name="RemoveButton" Content="Remove Product" Click="RemoveButton_Click" Margin="303,300,311,85" />
+            <Button x:Name="ShowAll" Content="Show Product" Click="ShowButton_Click" Margin="537,300,77,85" />
+        </Grid>
+    </Viewbox>
+</Page>
